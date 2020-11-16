@@ -1,8 +1,11 @@
 # eCPPTv2 Course Notes
 
-## TOC
+Course notes for eCPPTv2. Use the side bar to navigate to different topics. There will be ongoing changes to this site. 
 
-## Schedule
+## Introduction
+
+* Course Page - https://elearnsecurity.com/product/ecpptv2-certification/
+* Syllabus - link
 
 ## Progress
 
