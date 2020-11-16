@@ -5,7 +5,7 @@ Course notes for eCPPTv2. Use the side bar to navigate to different topics. Ther
 ## Introduction
 
 * Course Page - https://elearnsecurity.com/product/ecpptv2-certification/
-* Syllabus - link
+* Syllabus - https://github.com/drsh0/ecppt/blob/main/_files/syllabus_V5.pdf
 
 ## Progress
 
