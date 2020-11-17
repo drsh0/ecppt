@@ -22,7 +22,7 @@ _Last updated_: {docsify-updated}
 
 - [ ] **Section: Network Security**
 
-    - [ ] Module 1 : Information Gathering
+    - [x] Module 1 : Information Gathering
     - [ ] Module 2 : Scanning
     - [ ] Module 3 : Enumeration
     - [ ] Module 4 : Sniffing & MITM
