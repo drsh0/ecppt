@@ -62,3 +62,9 @@ ICMP is not the most reliable way as firewalls may block or filter ICMP.
 ##### DNS Discovery
 
 If netblocks or IPs are known, they can be scanned via nmap for all DNS servers (port 53, both TCP and UDP)
+
+## Tools
+
+* [DNSDumpster](https://dnsdumpster.com/) - find hosts from domain
+* DNSEnum - Obtain common DNS information + AXFR queries + subdomain wordlist
+* DNSMap - sub domain brute forcing
