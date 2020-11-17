@@ -11,7 +11,20 @@
   * `whois $domain`
   * `whois -h $whois_server $domain` - use custom registrar server
 
+#### DNS
 
+Common commands `dig`: `dig target.com [+short | PTR | MX | NS]`
+Common commands `nslookup`: `nslookup --type=[PTR | MX | NS] target.com`
+
+##### Zone transfer: 
+
+`dig axfr @target.com target.com` OR using `nslookup`:
+
+```
+nslookup
+> server target.com
+> ls -d target.com
+```
 
 
 ## Appendix
