@@ -72,3 +72,6 @@ Course notes for eCPPTv2. Use the side bar to navigate to different topics. Ther
     - [ ] Module 8 : Ruby for Pentesters: The Web
     - [ ] Module 9 : Ruby for Pentesters: Exploitation with Ruby
     - [ ] Module 10 : Ruby for Pentesters: Metasploit
+
+---
+Last updated: {docsify-updated}

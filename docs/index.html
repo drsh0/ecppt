@@ -30,7 +30,7 @@
       loadSidebar: true,
       subMaxLevel: 3,
       auto2top: true,
-      formatUpdated: '{DD} {MMMM}, {YYYY}',
+      formatUpdated: '{YYYY}-{MM}-{DD}',
       markdown: {
         smartypants: true,
         smartLists: true,
@@ -39,8 +39,14 @@
         buttonText : 'Copy to clipboard',
         errorText  : 'Error',
         successText: 'Copied'
-      }
+      },
+      search: {
+      //maxAge: 86400000, // Expiration time, the default one day
+      paths: 'auto', // or 'auto'
+      placeholder: 'Search',
+      depth: 4
     }
+  }
     
   </script>
 
