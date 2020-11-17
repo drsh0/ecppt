@@ -25,6 +25,19 @@ nslookup
 > server target.com
 > ls -d target.com
 ```
+##### DNS Port Open
 
+`nmap -sS -p53 [NETBLOCK]` (TCP)
+`nmap -sU -p53 [NETBLOCK]` (UDP)
+
+
+#### Host Discovery
+
+**fping**
+`fping -a -g [IP + CIDR]`
+
+**nmap**
+
+`nmap -sn [IP + CIDR]`
 
 ## Appendix
