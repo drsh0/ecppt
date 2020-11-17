@@ -16,7 +16,7 @@
 Common commands `dig`: `dig target.com [+short | PTR | MX | NS]`
 Common commands `nslookup`: `nslookup --type=[PTR | MX | NS] target.com`
 
-##### Zone transfer: 
+##### Zone transfer 
 
 `dig axfr @target.com target.com` OR using `nslookup`:
 
