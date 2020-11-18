@@ -9,6 +9,18 @@ Course notes for eCPPTv2. Use the side bar to navigate to different topics. Ther
 
 _Last updated_: {docsify-updated}
 
+## Tips and Resources
+
+### Repos
+* https://github.com/0xb1tByte/eCPPTv2-Journey
+* https://github.com/zer0byte/ecppt-notes
+* https://github.com/SilentFrogNet/hack-help
+
+### Reviews
+* https://huskyhacks.dev/2020/04/24/elsptp/
+* https://craigunder.me/ecppt-review/
+* https://jeroenvansaane.com/ecpptreview
+
 ## Progress
 
 - [ ] **Section: System Security**

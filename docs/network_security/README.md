@@ -1,6 +1,6 @@
 # Network Security
 
-## Information Gathering
+## 1. Information Gathering
 
 * Focus on **Business** 
   * people, products, services
@@ -68,3 +68,14 @@ If netblocks or IPs are known, they can be scanned via nmap for all DNS servers 
 * [DNSDumpster](https://dnsdumpster.com/) - find hosts from domain
 * DNSEnum - Obtain common DNS information + AXFR queries + subdomain wordlist
 * DNSMap - sub domain brute forcing
+
+## 2. Scanning
+
+**PPS** = ports, protocols, services
+
+### TCP/IP
+
+* **Three Way Handshake** - SYN --> SYN+ACK --> ACK
+* `hping` can be used to craft packets
+* If crafted packet returns `RA` (reset + ack) then the port appears to be unused. `SA` flag (syn ack)  would suggest port is open. 
+

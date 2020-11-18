@@ -34,10 +34,21 @@ nslookup
 #### Host Discovery
 
 **fping**
+
 `fping -a -g [IP + CIDR]`
 
 **nmap**
 
 `nmap -sn [IP + CIDR]`
+
+### Scanning
+
+##### TCP Flag Packet Crafting
+
+**hping3**
+
+Send SYN packet to specified port + IP 3 times
+
+`hping3 -S <IP> -p <port> [-c 3]`
 
 ## Appendix
