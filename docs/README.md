@@ -1,13 +1,13 @@
 # eCPPTv2 Course Notes
 
-Course notes for eCPPTv2. Use the side bar to navigate to different topics. There will be ongoing changes to this site. 
+Course notes for eCPPTv2. Use the side bar to navigate to different topics. There will be ongoing changes to this site.
+
+_Last updated_: {docsify-updated}
 
 ## Introduction
 
 * Course Page - https://elearnsecurity.com/product/ecpptv2-certification/
 * Syllabus - https://github.com/drsh0/ecppt/blob/main/_files/syllabus_V5.pdf
-
-_Last updated_: {docsify-updated}
 
 ## Tips and Resources
 
