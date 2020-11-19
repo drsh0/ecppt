@@ -79,3 +79,7 @@ If netblocks or IPs are known, they can be scanned via nmap for all DNS servers 
 * `hping` can be used to craft packets
 * If crafted packet returns `RA` (reset + ack) then the port appears to be unused. `SA` flag (syn ack)  would suggest port is open. 
 
+### `nmap` Deep Dive
+
+_Note: most specific commands are added in the cheatsheet instead_
+
