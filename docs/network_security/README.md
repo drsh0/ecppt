@@ -82,4 +82,31 @@ If netblocks or IPs are known, they can be scanned via nmap for all DNS servers 
 ### `nmap` Deep Dive
 
 _Note: most specific commands are added in the cheatsheet instead_
+<!-- tabs:start -->
+#### **TCP SYN**
+* `-sS` - TCP SYN Scan - most popular; quick and accurate
+  * send SYN packet
+  * if SYN/ACK received then port is open. If RST-ACK received then it is closed
+  * nmap then sends a RST to close the connection
+  * if no response receied = "filtered"
+#### **TCP Connect**
+* `-sT` - fallback default if SYN scan doesn't work
+  * relies on OS not packets
+  * we reply with ACK and then RST-ACK
 
+#### **UDP**
+* `-sU` - UDP scan; takes some time
+  * connection closed with ICMP port unreachable packet
+
+#### **Idle**
+* `-sI` - idle scan
+  * use fragmentation ID header
+  * target must use IP ID **incremental** generation
+  * forge packet that is sent to target with source IP belonging to the zombie
+  * SYN/ACK the zombie once the above is completed to see if IP ID **incremented by 2**
+    * this would indicate that the port is open on target
+  * If **incremented by 1** then the port appears to be closed.
+  * need to use `-Pn` to ensure our machine doesn't send pings 
+
+
+<!-- tabs:end -->
