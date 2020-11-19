@@ -83,7 +83,6 @@ If netblocks or IPs are known, they can be scanned via nmap for all DNS servers 
 
 _Note: most specific commands are added in the cheatsheet instead_
 
-### Scans
 <!-- tabs:start -->
 #### **TCP SYN**
 * `-sS` - TCP SYN Scan - most popular; quick and accurate
@@ -127,6 +126,9 @@ _Note: most specific commands are added in the cheatsheet instead_
 * `-sA` - TCP ACK Scan
   * used to map out firewall rules; usually would expect RST where there is no filtering
   * e.g. no reply from specific port means it was filtered
-<!-- tabs:end -->
 
-### Output
+#### **Output**
+* `-oN` - normal output stored in file
+* `-oX` - XML output
+* `-oG` - grepable output
+<!-- tabs:end -->
