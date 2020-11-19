@@ -108,5 +108,21 @@ _Note: most specific commands are added in the cheatsheet instead_
   * If **incremented by 1** then the port appears to be closed.
   * need to use `-Pn` to ensure our machine doesn't send pings 
 
+#### **Never DNS Resolution**
+* `-n` - prevent DNS resolution; helps with stealth
 
+#### **FTP Bounce**
+* `-b` - exploit FTP `PORT` command
+  * if FTP server is vulnerable, we can launch port scans from the FTP server
+
+#### **IP Protocol Scan**
+* `sO` - shows what IP protocols are supported instead of ports
+
+#### **Misc**
+* `-sN` - TCP null scan
+* `-sF` - FIN scan
+* `-sX` - Xmas scan
+* `-sA` - TCP ACK Scan
+  * used to map out firewall rules; usually would expect RST where there is no filtering
+  * e.g. no reply from specific port means it was filtered
 <!-- tabs:end -->
