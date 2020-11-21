@@ -41,7 +41,7 @@ _Last updated_: {docsify-updated}
 - [ ] **Section: Network Security**
 
     - [x] Module 1 : Information Gathering
-    - [ ] Module 2 : Scanning
+    - [x] Module 2 : Scanning
     - [ ] Module 3 : Enumeration
     - [ ] Module 4 : Sniffing & MITM
     - [ ] Module 5 : Vulnerability Assessment & Exploitation
