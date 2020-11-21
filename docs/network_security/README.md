@@ -132,3 +132,20 @@ _Note: most specific commands are added in the cheatsheet instead_
 * `-oX` - XML output
 * `-oG` - grepable output
 <!-- tabs:end -->
+
+### Service + OS Detection
+
+1. Banner Grabbing
+   * use banner seen when connecting via `ncat` etc. as service detection. FP prone.
+2. Service Probing
+   * use nmap `sV` to probe services based on signatures
+3. OS Fingerprinting
+   * passive - via packets received e.g. `p0f`
+   * active - send packets and wait for reply (uses TCP/IP)
+
+### Firewall + IDS Evasion
+
+* can be done via **packet fragmentation** e.g. `nmap -sS -f [IP]`
+* use **decoys** to make tracking our IP harder e.g. `nmap -sS -D <decoyIP1>,<decoyIP2>,ME <target>`
+* modify **timing** using `-T[0-5]` to slow down or speed scans
+* change **source port** if traffic is only allowed through specific ports e.g. `--source-port <port>`
