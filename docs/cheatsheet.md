@@ -80,7 +80,7 @@ Useful NSE scripts:
 
 Gather all information about a NB target:
 
-:fas windows:
+<i class="fa fa-windows fa-lg"></i>
 
 `nbstat -A <target IP>`
 
@@ -90,7 +90,7 @@ Browse shares: `net use <local drive letter> \\<IP>\<remote share>`
 
 e.g. `net use K: \\192.168.1.11\C` to mount remote C: share to K:`
 
-:fas linux:
+<i class="fa fa-linux fa-lg"></i>
 
 `nbtscan -v <target IP/CIDR>`
 
