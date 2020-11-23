@@ -149,3 +149,30 @@ _Note: most specific commands are added in the cheatsheet instead_
 * use **decoys** to make tracking our IP harder e.g. `nmap -sS -D <decoyIP1>,<decoyIP2>,ME <target>`
 * modify **timing** using `-T[0-5]` to slow down or speed scans
 * change **source port** if traffic is only allowed through specific ports e.g. `--source-port <port>`
+
+## 3. Enumeration
+
+After finding devices and resources on a network, gather more detailed info on them = enumeration.
+
+### NetBIOS
+
+NetBIOS = Network Basic Input Output System
+
+* Purpose: Allow apps from diff. OS communicate with each other over LAN e.g. share printers and files
+* Ports: U137, U138, T139
+* SMB = Service Message Block: T445
+
+**Name Service (U137)**
+  
+  * map NetBIOS (NB) name --> IP
+  * [16char name]00-FF - the suffix tells us the service/type of the resource
+  * WINS - Windows Internet Name Service maps names --> IP in Windows
+
+**Datagram Service (U138)**
+
+  * sends and receives messages from NB names inc. broadcasts. 
+
+**Session Service (T139)**
+
+  * allows two NB names to establish connection to exchange data
+  * name resolved -> connection established -> session request -> session response

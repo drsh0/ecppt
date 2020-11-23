@@ -41,6 +41,7 @@ nslookup
 
 `nmap -sn [IP + CIDR]`
 
+---
 ### Scanning
 
 **TCP Flag Packet Crafting with hping3**
@@ -72,4 +73,32 @@ Useful NSE scripts:
 - auth
 - default
 ```
+---
+### Enumeration
+
+#### SMB/NetBIOS
+
+**Nbstat**
+
+Gather all information about a NB target:
+
+:windows:
+`nbstat -A <target IP>`
+
+Check for shares: `net view <IP>`
+
+Browse shares: `net use <local drive letter> \\<IP>\<remote share>`
+
+e.g. `net use K: \\192.168.1.11\C` to mount remote C: share to K:`
+
+:linux:
+`nbtscan -v <target IP/CIDR>`
+
+List shares: `smbclient -L <IP>`
+
+* check for `$` shares (hidden)
+* check for `$IPC` shares (null session attack)
+
+Mount share: `mount.cifs //<IP>/<remote share> /<localdir> user=_, pass=_`
+
 ## Appendix
