@@ -79,9 +79,7 @@ Useful NSE scripts:
 #### SMB/NetBIOS
 
 Gather all information about a NB target:
-
 <i class="fa fa-windows fa-lg"></i>
-
 `nbstat -A <target IP>`
 
 Check for shares: `net view <IP>`
@@ -89,9 +87,7 @@ Check for shares: `net view <IP>`
 Browse shares: `net use <local drive letter> \\<IP>\<remote share>`
 
 e.g. `net use K: \\192.168.1.11\C` to mount remote C: share to K:`
-
 <i class="fa fa-linux fa-lg"></i>
-
 `nbtscan -v <target IP/CIDR>`
 
 List shares: `smbclient -L <IP>`
