@@ -80,7 +80,9 @@ Useful NSE scripts:
 
 Gather all information about a NB target:
 
-<i class="fa fa-windows fa-lg"></i>
+<!-- tabs:start -->
+
+#### ** Windows **
 
 `nbstat -A <target IP>`
 
@@ -90,7 +92,7 @@ Browse shares: `net use <local drive letter> \\<IP>\<remote share>`
 
 e.g. `net use K: \\192.168.1.11\C` to mount remote C: share to K:
 
-<i class="fa fa-linux fa-lg"></i>
+#### ** Linux **
 
 `nbtscan -v <target IP/CIDR>`
 
@@ -100,5 +102,7 @@ List shares: `smbclient -L <IP>`
 * check for `$IPC` shares (null session attack)
 
 Mount share: `mount.cifs //<IP>/<remote share> /<localdir> user=_, pass=_`
+
+<!-- tabs:end -->
 
 ## Appendix
