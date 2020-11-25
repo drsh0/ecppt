@@ -78,11 +78,11 @@ Useful NSE scripts:
 
 #### SMB/NetBIOS
 
-Gather all information about a NB target:
-
 <!-- tabs:start -->
 
 #### ** Windows **
+
+Gather all information:
 
 `nbstat -A <target IP>`
 
@@ -92,7 +92,11 @@ Browse shares: `net use <local drive letter> \\<IP>\<remote share>`
 
 e.g. `net use K: \\192.168.1.11\C` to mount remote C: share to K:
 
+Null Session: `net use \\<IP>\IPC$ "" /u:""`
+
 #### ** Linux **
+
+Gather all information:
 
 `nbtscan -v <target IP/CIDR>`
 
