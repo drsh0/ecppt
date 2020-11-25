@@ -179,3 +179,7 @@ NetBIOS = Network Basic Input Output System
 
 ### SNMP
 
+SNMP = Simple Network Management Protocol
+
+* Ports: U161 General, U162 Trap Messages
+* MIBs have definitions in which paths are traversed until the object identifier (OID) e.g. `1.3.6.1`

@@ -107,6 +107,23 @@ List shares: `smbclient -L <IP>`
 
 Mount share: `mount.cifs //<IP>/<remote share> /<localdir> user=_, pass=_`
 
+#### SNMP
+
+Get SNMP info: 
+
+`snmpwalk -v <version> <IP> -c <community string> [OID]` 
+
+Set new values:
+
+`snmpset -v <version> -c <string> <IP> <OID> [s|i|o|a] <new_value>`
+
+Nmap scripts:
+
+* `snmp-brute`
+* `snmp-info`
+* `snmp-win32-services`
+
+
 <!-- tabs:end -->
 
 ## Appendix

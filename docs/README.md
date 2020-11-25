@@ -42,7 +42,7 @@ _Last updated_: {docsify-updated}
 
     - [x] Module 1 : Information Gathering
     - [x] Module 2 : Scanning
-    - [ ] Module 3 : Enumeration
+    - [x] Module 3 : Enumeration
     - [ ] Module 4 : Sniffing & MITM
     - [ ] Module 5 : Vulnerability Assessment & Exploitation
     - [ ] Module 6 : Post Exploitation
