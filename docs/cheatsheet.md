@@ -107,6 +107,8 @@ List shares: `smbclient -L <IP>`
 
 Mount share: `mount.cifs //<IP>/<remote share> /<localdir> user=_, pass=_`
 
+<!-- tabs:end -->
+
 #### SNMP
 
 Get SNMP info: 
