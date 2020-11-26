@@ -183,3 +183,24 @@ SNMP = Simple Network Management Protocol
 
 * Ports: U161 General, U162 Trap Messages
 * MIBs have definitions in which paths are traversed until the object identifier (OID) e.g. `1.3.6.1`
+
+## 4. Sniffing & MITM
+
+* **Passive Sniffing** - Wireshark
+* **Active Sniffing**
+  * MAC flooding - flood the CAM table so the switch operates as a hub
+  * ARP poisoning
+    * redirect traffic from victims to a specific machine
+
+### ARP
+
+- Address Resolution Protocol (ARP)
+- match L3 with L2
+- packets: ARP requests, ARP replies
+- ARP table contains IP and MAC mappings
+- If MAC is not found in table, a broadcast is sent. The machine with that IP replies with its MAC address
+- **Attacks** 
+  - host poisoning - use Gratuitous ARP reply packets to trick host A to send to host M instead of host B
+  - gateway poisoning - use Gratuitous ARP reply packets to tell all hosts that machine M is the gateway. Can cause DoS if _M_ is not capable of handling high no. of packets.
+
+### MITM
