@@ -204,3 +204,21 @@ SNMP = Simple Network Management Protocol
   - gateway poisoning - use Gratuitous ARP reply packets to tell all hosts that machine M is the gateway. Can cause DoS if _M_ is not capable of handling high no. of packets.
 
 ### MITM
+
+* ARP Poisoning
+  * send modified ARP messages to modify source/destination
+  * modified ARP pointing to malicious gateway
+
+* DHCP Snooping
+  * Rogue DHCP server that sends DHCPOFFER with longer lease time
+
+* Public Key Exchange
+  * Intercept public key request and send a rogue public key instead that you control.
+
+* LLMNR / NBT
+  * fallback if DNS fails in WIN environments
+  * wait for user to mistype SMB address --> reverts to LLMNR/NBT-NS as there is no DNS for typo
+  * once that occurs, attacker replies to broadcast claiming to be typo system
+  * victim complies; attacker receives NTLM hashes
+  * these hashes can then be passed to other legitimate LAN systems or cracked offline
+  * **Tools**: Responder + MultiRelay
