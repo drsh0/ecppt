@@ -222,3 +222,5 @@ SNMP = Simple Network Management Protocol
   * victim complies; attacker receives NTLM hashes
   * these hashes can then be passed to other legitimate LAN systems or cracked offline
   * **Tools**: Responder + MultiRelay
+
+### Attacking Tools
