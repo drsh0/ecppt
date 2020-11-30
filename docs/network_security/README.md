@@ -223,4 +223,7 @@ SNMP = Simple Network Management Protocol
   * these hashes can then be passed to other legitimate LAN systems or cracked offline
   * **Tools**: Responder + MultiRelay
 
-### Attacking Tools
+* 🔒 HTTPS requires further tools and operational changes
+  * Bettercap - HTTPS MITM
+  * sslstrip+ - bypass HTTPS
+  * MITMf - bypass HSTS
