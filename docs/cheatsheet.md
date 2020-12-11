@@ -126,6 +126,6 @@ Nmap scripts:
 * `snmp-win32-services`
 
 
-<!-- tabs:end -->
+### Exploitation: Low Hanging Fruit
 
 ## Appendix

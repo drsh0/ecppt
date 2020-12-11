@@ -227,3 +227,15 @@ SNMP = Simple Network Management Protocol
   * Bettercap - HTTPS MITM
   * sslstrip+ - bypass HTTPS
   * MITMf - bypass HSTS
+
+## Exploitation
+
+### Vulnerability Assessments
+
+* this phase is done on all hosts that are discovered.
+* vulnerability scanners can be used but create noise.
+* probes: ports, config files, registry values
+* general steps: check host is alive -> check open ports -> send probes for each port -> collate running services with db
+
+### Low Hanging Fruits
+
