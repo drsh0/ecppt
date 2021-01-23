@@ -228,7 +228,7 @@ SNMP = Simple Network Management Protocol
   * sslstrip+ - bypass HTTPS
   * MITMf - bypass HSTS
 
-## Exploitation
+## 5. Exploitation
 
 ### Vulnerability Assessments
 
@@ -238,4 +238,25 @@ SNMP = Simple Network Management Protocol
 * general steps: check host is alive -> check open ports -> send probes for each port -> collate running services with db
 
 ### Low Hanging Fruits
+
+Examples of low hanging fruit:
+
+* misconfigured servers
+* default/weak passwords
+* open shares like SMB
+
+### Exploitation
+
+Hopefully, if vulns are found via LHF, move onto exploitation phase e.g. using metasploit. An example scenario on auth weakness:
+
+* NTLM (NT Lan Manager) - used when connecting directly to an IP address or outside the same domain
+  * challenge + response protocol -- negotiation -> challenge -> response
+  * an older examples used LM hashes to authenticate which are very weak now (DES) and are usually sent WITH NTLM
+  * so generally, if these hashes are obtained, they can be easily brute forced. 
+* Use MITM or force a client to authenticate to an attacker controlled host.
+  * latter can be done via getting a user to click a link containing a UNC path (\\host\\share)
+  * since we control the server, the random challenge can be static and therefore hashes collected for cracking
+
+?> Type 3 (step 3) message received from the client is the most important for NTML for exploitation purposes. 
+
 

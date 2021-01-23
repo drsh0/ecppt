@@ -126,6 +126,23 @@ Nmap scripts:
 * `snmp-win32-services`
 
 
-### Exploitation: Low Hanging Fruit
+### Exploitation
+
+#### Low Hanging Fruit
+
+Examples of brute forcers:
+* ncrack
+* medusa
+* patator
+* EyeWitness (webapps)
+* Rsmangler (wordlist generator)
+
+#### NTLM hash cracking
+**lm/v1**
+
+sniff auth messages via metasploit: `use auxiliary/server/capture/smb` 
+john: `john --format=ntlm $hashfile`
+
+
 
 ## Appendix
